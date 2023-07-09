@@ -11,11 +11,13 @@ const db = require("./models");
 const postProduct = require("./routes/Product");
 app.use("/products", postProduct);
 
+const PORT = process.env.PORT || 5001;
+
 db.sequelize
   .sync()
   .then(() => {
-    app.listen(process.env.PORT || 3001, () => {
-      console.log("Server is running on port 3001");
+    app.listen(PORT, () => {
+      console.log("Server is running on port: ", PORT);
     });
   })
   .catch((err) => console.log(err));
