@@ -26,5 +26,8 @@
     "sequelize": "^6.30.0",
     "sequelize-cli": "^6.6.0",
     "serve": "^14.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.1.6"
   }
 }
