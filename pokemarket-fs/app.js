@@ -1,12 +1,10 @@
-require("dotenv").config();
-
-const path = require("path");
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const itemRouter = require("./routes/Item");
 
 const cors = require("cors");
+require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
@@ -28,12 +26,5 @@ mongoose
     console.log("bla");
     console.log(err);
   });
-
-if (process.env.NODE_ENV === "production") {
-  // app.use(express.static())
-  app.get("*", (req, res) => {
-    res.sendFile();
-  });
-}
 
 // console.log("avner");

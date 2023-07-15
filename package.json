@@ -23,7 +23,6 @@
     "mongoose": "^7.3.3",
     "mysql2": "^3.2.0",
     "nodemon": "^2.0.22",
-    "path": "^0.12.7",
     "sequelize": "^6.30.0",
     "sequelize-cli": "^6.6.0",
     "serve": "^14.2.0"
